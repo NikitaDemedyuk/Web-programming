@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"task5/src/main/java/com.bsu",
+			"task5/src/main/java"
+		]
+	}
+}

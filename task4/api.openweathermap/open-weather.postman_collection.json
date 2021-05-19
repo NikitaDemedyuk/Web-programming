@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "84452c7b-fa3d-4c0b-8a1a-0e0b25da23a3",
+		"name": "open-weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.openweathermap.org/data/2.5/find?q=Minsk&type=like&APPID=b34147ce28549090576f7e857c0deec3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/find?q=Minsk&type=accurate&APPID=b34147ce28549090576f7e857c0deec3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Minsk"
+						},
+						{
+							"key": "type",
+							"value": "accurate"
+						},
+						{
+							"key": "APPID",
+							"value": "b34147ce28549090576f7e857c0deec3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/find?q=Moscow&type=like&APPID=b34147ce28549090576f7e857c0deec3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/find?q=Moscow&type=like&APPID=b34147ce28549090576f7e857c0deec3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Moscow"
+						},
+						{
+							"key": "type",
+							"value": "like"
+						},
+						{
+							"key": "APPID",
+							"value": "b34147ce28549090576f7e857c0deec3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=Moscow&id=524901&APPID=b34147ce28549090576f7e857c0deec3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Moscow&id=524901&APPID=b34147ce28549090576f7e857c0deec3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Moscow"
+						},
+						{
+							"key": "id",
+							"value": "524901"
+						},
+						{
+							"key": "APPID",
+							"value": "b34147ce28549090576f7e857c0deec3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

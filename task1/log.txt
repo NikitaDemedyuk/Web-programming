@@ -1,0 +1,11 @@
+commit 0eb1b31525c63c8687d75ca595fb4b14dc6564fe (HEAD -> master)
+Author: mariakolyachko <miss.kolyachko@gmail.com>
+Date:   Tue Feb 11 10:13:28 2020 +0300
+
+    add status.txt
+
+commit 22799d63edeb5c6815624d79f8b5db19d36f8718
+Author: mariakolyachko <miss.kolyachko@gmail.com>
+Date:   Tue Feb 11 10:10:36 2020 +0300
+
+    add .gitignore

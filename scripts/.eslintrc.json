@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "google"
+    ],
+    "globals": {
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "parser": "babel-eslint",
+    "rules": {
+    }
+}

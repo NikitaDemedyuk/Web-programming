@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "a20b542b-2261-46d1-a218-77a6fb75ea29",
+		"name": "jobs-github",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://jobs.github.com/positions.json?description=ruby&page=1&location=Rockland",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "OAUTH-TOKEN",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jobs.github.com/positions.json?description=ruby&page=1&location=Rockland",
+					"protocol": "https",
+					"host": [
+						"jobs",
+						"github",
+						"com"
+					],
+					"path": [
+						"positions.json"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "ruby"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "location",
+							"value": "Rockland"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jobs.github.com/positions.json?description=c++&title=senior&location=minsk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jobs.github.com/positions.json?description=c++&title=senior&location=minsk",
+					"protocol": "https",
+					"host": [
+						"jobs",
+						"github",
+						"com"
+					],
+					"path": [
+						"positions.json"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "c++"
+						},
+						{
+							"key": "title",
+							"value": "senior"
+						},
+						{
+							"key": "location",
+							"value": "minsk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jobs.github.com/positions.json?description=c++&page=1&type=full time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jobs.github.com/positions.json?description=java&company=google&title=developer",
+					"protocol": "https",
+					"host": [
+						"jobs",
+						"github",
+						"com"
+					],
+					"path": [
+						"positions.json"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "java"
+						},
+						{
+							"key": "company",
+							"value": "google"
+						},
+						{
+							"key": "title",
+							"value": "developer"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,212 @@
+var postModel = new PostModel(posts);
+
+console.log(postModel.getPage(0, 10));
+console.log(postModel.getPage(1, 10, {author: "veronikchaa"}));
+console.log(postModel.getPage(2, 10, {createdAt: new Date("2020-02-19T15:08:23")}));
+console.log(postModel.getPage(0, 10, {tags: ["bsu"]}));
+console.log(postModel.getPage(0, 10, {tags: ["love"]}));
+
+
+var newPost = { 
+  id: "20",
+  description: "как заставить идею подключиться к серверу ? :)",
+  author: "mariakolyachko",
+  createdAt: new Date(),
+  photolink: "users/mariakolyachko/photo.jpg",
+  tags: ["IDEA", "Tomcat", "java", "love", "pain"]
+};
+
+console.log(postModel.add(newPost));
+console.log(postModel.get("20"));
+
+var invalidatePost = {
+  id: "21",
+  description: "unable to ping server at localhost:1099",
+  createdAt: new Date(),
+  author: ""
+}
+console.log(postModel.add(invalidatePost));
+console.log(postModel.get("21"));
+
+var changes = {
+  description: "люблю проводить по 13 часов в универе",
+  tags: ["miss2020", "dreamteam_famcs"]
+}
+
+console.log(postModel.get("15"));
+console.log(postModel.edit("15", changes));
+console.log(postModel.get("15"));
+
+var invalidateChanges = {
+  id: "24",
+  description: "но моё любимое число 24"
+}
+console.log(postModel.edit("20", invalidateChanges));
+console.log(postModel.get("20"));
+
+console.log(postModel.remove("20"));
+console.log(postModel.get("20"));
+undefined
+(10) […]
+​
+0: Object { id: "1", description: "самое время вспомнить про твиттер, нужно же понять, что нам нужно писать на уп", author: "mariakolyachko", … }
+​
+1: Object { id: "2", description: "Считаю определители методом Лагранжа!\nПотому что могу себе позволить!", author: "veronikchaa", … }
+​
+2: Object { id: "3", description: "Это всё сахарок", author: "ar_kud", … }
+​
+3: Object { id: "4", description: "Нет, я не злой председ, я просто котик :)", author: "sstrazdina", … }
+​
+4: Object { id: "5", description: "хочу уже танцевать под безумие на афтере мисс", author: "polina_volchetskaya", … }
+​
+5: Object { id: "6", description: "я тебя конечно тоже люблю, но валяюсь с простудой)", author: "pavel.tyl", … }
+​
+6: Object { id: "7", description: "-Вероника, хочешь апельсин?\n-Я хочу умереть :(", author: "mariakolyachko", … }
+​
+7: Object { id: "8", description: " — Слова — это имущество общественное, поэтому их у вас и недолжно быть. Вы можете только брать их из общей кучки и использовать по назначению. Желательно по делу. Иначе от них нет никакого толка.\nЛавка Времени", author: "al_taraikovich", … }
+​
+8: Object { id: "9", description: "Мне вчера такие психоделические сны снились, вы даже не представляете.", author: "kupajj_oleg_", … }
+​
+9: Object { id: "10", description: "позвали в жюри, безумно этому рад!", author: "vitonka", … }
+​
+length: 10
+​
+<prototype>: Array []
+debugger eval code:3:9
+(2) […]
+​
+0: Object { id: "17", description: "люблю себя и свою жизнь просто так", author: "veronikchaa", … }
+​
+1: Object { id: "18", description: "слышу твои кабlookи", author: "veronikchaa", … }
+​
+length: 2
+​
+<prototype>: Array []
+debugger eval code:4:9
+(10) […]
+​
+0: Object { id: "6", description: "я тебя конечно тоже люблю, но валяюсь с простудой)", author: "pavel.tyl", … }
+​
+1: Object { id: "7", description: "-Вероника, хочешь апельсин?\n-Я хочу умереть :(", author: "mariakolyachko", … }
+​
+2: Object { id: "8", description: " — Слова — это имущество общественное, поэтому их у вас и недолжно быть. Вы можете только брать их из общей кучки и использовать по назначению. Желательно по делу. Иначе от них нет никакого толка.\nЛавка Времени", author: "al_taraikovich", … }
+​
+3: Object { id: "9", description: "Мне вчера такие психоделические сны снились, вы даже не представляете.", author: "kupajj_oleg_", … }
+​
+4: Object { id: "10", description: "позвали в жюри, безумно этому рад!", author: "vitonka", … }
+​
+5: Object { id: "11", description: "а пятое задание спустя две недели так и не поддалось :(", author: "mariakolyachko", … }
+​
+6: Object { id: "12", description: "ну я вижу только Полину и Машу. Это же Маша, да?", author: "kupajj_oleg_", … }
+​
+7: Object { id: "13", description: "самые интересные стажировки у нас в Яндексе!", author: "vitonka", … }
+​
+8: Object { id: "14", description: "иногда просто так хейтишь меня, а потом просто так любишь", author: "pavel.tyl", … }
+​
+9: Object { id: "15", description: "хочу уже танцевать под безумие на афтере мисс", author: "polina_volchetskaya", … }
+​
+length: 10
+​
+<prototype>: Array []
+debugger eval code:5:9
+(2) […]
+​
+0: Object { id: "1", description: "самое время вспомнить про твиттер, нужно же понять, что нам нужно писать на уп", author: "mariakolyachko", … }
+​
+1: Object { id: "10", description: "позвали в жюри, безумно этому рад!", author: "vitonka", … }
+​
+length: 2
+​
+<prototype>: Array []
+debugger eval code:6:9
+(5) […]
+​
+0: Object { id: "1", description: "самое время вспомнить про твиттер, нужно же понять, что нам нужно писать на уп", author: "mariakolyachko", … }
+​
+1: Object { id: "2", description: "Считаю определители методом Лагранжа!\nПотому что могу себе позволить!", author: "veronikchaa", … }
+​
+2: Object { id: "7", description: "-Вероника, хочешь апельсин?\n-Я хочу умереть :(", author: "mariakolyachko", … }
+​
+3: Object { id: "13", description: "самые интересные стажировки у нас в Яндексе!", author: "vitonka", … }
+​
+4: Object { id: "14", description: "иногда просто так хейтишь меня, а потом просто так любишь", author: "pavel.tyl", … }
+​
+length: 5
+​
+<prototype>: Array []
+debugger eval code:7:9
+true debugger eval code:19:9
+{…}
+​
+author: "mariakolyachko"
+​
+createdAt: Date Sun Mar 29 2020 20:11:48 GMT+0300 (Moscow Standard Time)
+​
+description: "как заставить идею подключиться к серверу ? :)"
+​
+id: "20"
+​
+photolink: "users/mariakolyachko/photo.jpg"
+​
+tags: Array(5) [ "IDEA", "Tomcat", "java", … ]
+​
+<prototype>: Object { … }
+debugger eval code:20:9
+false debugger eval code:28:9
+null debugger eval code:29:9
+{…}
+​
+author: "polina_volchetskaya"
+​
+createdAt: Date Wed Nov 13 2019 23:48:11 GMT+0300 (Moscow Standard Time)
+​
+description: "хочу уже танцевать под безумие на афтере мисс"
+​
+id: "15"
+​
+likes: Array []
+​
+photoLink: "users/polina_volchetskaya/photo.jpg"
+​
+tags: Array [ "dance" ]
+​
+<prototype>: Object { … }
+debugger eval code:36:9
+true debugger eval code:37:9
+{…}
+​
+author: "polina_volchetskaya"
+​
+createdAt: Date Wed Nov 13 2019 23:48:11 GMT+0300 (Moscow Standard Time)
+​
+description: "люблю проводить по 13 часов в универе"
+​
+id: "15"
+​
+likes: Array []
+​
+photoLink: "users/polina_volchetskaya/photo.jpg"
+​
+tags: Array [ "miss2020", "dreamteam_famcs" ]
+​
+<prototype>: Object { … }
+debugger eval code:38:9
+false debugger eval code:44:9
+{…}
+​
+author: "mariakolyachko"
+​
+createdAt: Date Sun Mar 29 2020 20:11:48 GMT+0300 (Moscow Standard Time)
+​
+description: "как заставить идею подключиться к серверу ? :)"
+​
+id: "20"
+​
+photolink: "users/mariakolyachko/photo.jpg"
+​
+tags: Array(5) [ "IDEA", "Tomcat", "java", … ]
+​
+<prototype>: Object { … }
+debugger eval code:45:9
+undefined debugger eval code:47:9
+null debugger eval code:48:9
